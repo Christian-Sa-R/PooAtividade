@@ -1,12 +1,10 @@
 public class Turma {
-    int idTurma;
-    String nome;
-    String professor;
-    int vagas;
+    private String nomeDisciplina;
+    private String professor;
+    private int vagas;
 
-    public Turma (int idTurma, String nome, String professor, int vagas) {
-        this.idTurma = idTurma;
-        this.nome = nome;
+    public Turma (String nomeDisciplina, String professor, int vagas) {
+        this.nomeDisciplina = nomeDisciplina;
         this.professor = professor;
         this.vagas = vagas;
     }
@@ -17,6 +15,30 @@ public class Turma {
                 Disciplina: %s
                 Professor: %s
                 Capacidade: %d
-                """.formatted(nome, professor, vagas);
+                """.formatted(nomeDisciplina, professor, vagas);
+    }
+
+    public String getNomeDisciplina() {
+        return nomeDisciplina;
+    }
+
+    public void setNomeDisciplina(String nomeDisciplina) {
+        this.nomeDisciplina = nomeDisciplina;
+    }
+
+    public String getProfessor() {
+        return professor;
+    }
+
+    public void setProfessor(String professor) {
+        this.professor = professor;
+    }
+
+    public int getVagas() {
+        return vagas;
+    }
+
+    public void setVagas(int vagas) {
+        this.vagas = vagas;
     }
 }
