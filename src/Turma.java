@@ -14,7 +14,7 @@ public class Turma {
         return """
                 Disciplina: %s
                 Professor: %s
-                Capacidade: %d
+                Capacidade: %d alunos
                 """.formatted(nomeDisciplina, professor, vagas);
     }
 
