@@ -1,11 +1,12 @@
 public class Main {
     public static void main() {
-        /*Turma minhaTurma = new Turma("Programação Orientada a Objetos - T01", "Orlando", 42);
-        System.out.println(minhaTurma);
+        /*Turma turma01 = new Turma("POO-01", "Christian", 60);
+        System.out.println(turma01);
 
-        minhaTurma.professor = "Orlando Ohashi";
-        minhaTurma.setProfessor("Orlando Ohashi");
-        System.out.println(minhaTurma.getProfessor());
+        turma01.setProfessor("Christian Sá");
+        System.out.println(turma01);
+
+        System.out.println(turma01.getProfessor());
          */
         Turma[] turmas = new Turma[5];
         turmas[0] = new Turma("Estrutura de Dados", "Fulano Primeiro", 40);
