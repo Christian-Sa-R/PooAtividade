@@ -1,10 +1,9 @@
-public class Turma {
-    private String nomeDisciplina;
+public class Turma extends Disciplina {
     private String professor;
     private int vagas;
 
-    public Turma (String nomeDisciplina, String professor, int vagas) {
-        this.nomeDisciplina = nomeDisciplina;
+    public Turma (Disciplina disciplina, String professor, int vagas) {
+        super(disciplina.getNomeDisciplina(), disciplina.getCargaHoraria());
         this.professor = professor;
         this.vagas = vagas;
     }
@@ -15,15 +14,8 @@ public class Turma {
                 Disciplina: %s
                 Professor: %s
                 Vagas: %d alunos
-                """.formatted(nomeDisciplina, professor, vagas);
-    }
-
-    public String getNomeDisciplina() {
-        return nomeDisciplina;
-    }
-
-    public void setNomeDisciplina(String nomeDisciplina) {
-        this.nomeDisciplina = nomeDisciplina;
+                Carga horária: %d horas
+                """.formatted(getNomeDisciplina(), professor, vagas, getCargaHoraria());
     }
 
     public String getProfessor() {
